@@ -1,0 +1,43 @@
+{
+	"name": "sshfsa",
+	"date": "05-02-2018",
+	"description": "SSHFS assistant for mounting a remote filesystem using SFTP.",
+	"main": "bin/sshfsa.js",
+	"author": {
+		"name": "Scott Johnson"
+	},
+	"license": "UNLICENSED",
+	"version": "0.0.1",
+	"engines": {
+		"node": ">=4.0.0"
+	},
+	"scripts": {
+		"test": "echo \"***This happens after install\" && echo \"***So does this\"",
+		"build": "node scripts/build.js",
+		"watch": "node scripts/watch.js",
+		"deploy": "node scripts/deploy.js"
+	},
+	"bin_desc": "Determines the command that will be globally available : Determines the script that will act as the global app.",
+	"bin": {
+		"sshfsa": "bin/sshfsa.js"
+	},
+	"keywords": [],
+	"files": [
+		"bin",
+		"config-example.json"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/life-corp/sshfsa.git"
+	},
+	"bugs": {
+		"url": "https://github.com/life-corp/sshfsa/issues"
+	},
+	"homepage": "https://github.com/life-corp/sshfsa#readme",
+	"devDependencies": {},
+	"dependencies": {
+		"minimist": "^1.2.0",
+		"parse-ssh-config": "file:lib/parse-ssh-config",
+		"q": "^1.5.1"
+	}
+}
