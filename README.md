@@ -21,7 +21,7 @@ Host example.com
   Port 22
   User exampleuser
   IdentityFile ~/.ssh/example.com
-  # sshfs_mount_point ~/mnt/thejobsdriver.com
+  # sshfs_mount_point ~/mnt/example.com
   # sshfs_remote_directory /home/exampleuser
 ```
 

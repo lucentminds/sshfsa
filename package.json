@@ -24,7 +24,7 @@
 	"keywords": [],
 	"files": [
 		"bin",
-		"config-example.json"
+		"lib/parse-ssh-config"
 	],
 	"repository": {
 		"type": "git",
@@ -37,7 +37,6 @@
 	"devDependencies": {},
 	"dependencies": {
 		"minimist": "^1.2.0",
-		"parse-ssh-config": "file:lib/parse-ssh-config",
 		"q": "^1.5.1"
 	}
 }
