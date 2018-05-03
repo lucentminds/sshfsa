@@ -87,7 +87,7 @@ function read_ssh_config( cHost ){
 
 function mount_host( oHost ){
    const deferred = Q.defer();
-   const cMountPoint = expand_tilde( oHost.sshfs_mount_point );
+   var cMountPoint = oHost.sshfs_mount_point;
    const cRemoteDir = oHost.sshfs_remote_directory || '/';
    const cHost = oHost.Host;
    const cHostAndPath = `${cHost}:${cRemoteDir}`;
@@ -96,6 +96,8 @@ function mount_host( oHost ){
       console.log( 'Local mount point is missing or invalid.' );
       process.exit( 1 );
    }
+
+   cMountPoint = expand_tilde( cMountPoint );
 
    get_sshfs_mounts()
    .then(function( aMounts ){
