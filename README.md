@@ -42,3 +42,8 @@ Example unmount
 ```shell
 sshfsa example.com -u
 ```
+
+
+## Todo
+
+* Add shell autocompletion installation.
