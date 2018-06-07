@@ -4,7 +4,7 @@ SSHFS assistant for mounting a remote filesystem using SFTP.
 
 ### Useage:
 ```shell
-npm install -g git+https://github.com/lifecorp/sshfsa.git
+npm install -g git+https://github.com/lucentminds/sshfsa.git
 ```
 
 Note: You may have to `su` as root to install. Haven't figured out how to fix this yet.
