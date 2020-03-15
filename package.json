@@ -36,7 +36,7 @@
    "homepage": "https://github.com/life-corp/sshfsa#readme",
    "devDependencies": {},
    "dependencies": {
-      "minimist": "^1.2.0",
+      "minimist": "^1.2.2",
       "q": "^1.5.1"
    }
 }
