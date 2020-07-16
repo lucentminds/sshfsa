@@ -1,0 +1,17 @@
+{
+   "undef": true,
+   "unused": true,
+   "quotmark" : "single",
+   "trailing" : true,
+   "asi": false,
+
+   // Relaxing options
+   "esnext": true,
+
+   // environments
+   "node": true,
+
+   "globals": {
+      "Server": false
+   }
+}
