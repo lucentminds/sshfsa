@@ -17,6 +17,7 @@ var Q = require( 'q' );
 const fs = require( 'fs' );
 const os = require( 'os' );
 const process_args = require('minimist');
+const chalk = require( 'chalk' );
 
 main( process.argv.slice( 2 ) );
 
@@ -37,17 +38,18 @@ function main( args ){
          process.exit(0);
       })
       .catch(function( err ){
-         console.error( err );
+         console.error( chalk.red( err ) );
          process.exit(1);
       });
       break;
+      
    case !!o_args.list:
       require( '../lib/cmd-list' )( o_args )
       .then(function(){
          process.exit(0);
       })
       .catch(function( err ){
-         console.error( err );
+         console.error( chalk.red( err ) );
          process.exit(1);
       });
       break;
@@ -58,7 +60,7 @@ function main( args ){
          process.exit(0);
       })
       .catch(function( err ){
-         console.error( err );
+         console.error( chalk.red( err ) );
          process.exit(1);
       });
    }// /switch()
