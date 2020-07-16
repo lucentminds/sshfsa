@@ -28,7 +28,7 @@ Host example.com
   # sshfs_remote_directory /home/exampleuser
 ```
 
-Add the following two lines to your `~/.bashrc` file to enable ssh host shell/terminal auto completion.
+To enable ssh host shell/terminal auto completion, copy the file `/usr/share/bash-completion/completions/ssh` to `/usr/share/bash-completion/completions/sshfsa` and put the following at the bottom of the copied file...
 ```conf
 # Map ssh autocompletion to the sshfsa command.
 complete -F _ssh sshfsa
