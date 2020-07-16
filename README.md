@@ -2,7 +2,7 @@
 05-02-2018  
 SSHFS assistant for mounting a remote filesystem using SFTP.
 
-### Useage:
+### Installtion:
 ```shell
 npm install -g git+https://github.com/lucentminds/sshfsa.git
 ```
@@ -26,6 +26,12 @@ Host example.com
   IdentityFile ~/.ssh/example.com
   # sshfs_mount_point ~/mnt/example.com
   # sshfs_remote_directory /home/exampleuser
+```
+
+Add the following two lines to your `~/.bashrc` file to enable ssh host shell/terminal auto completion.
+```conf
+# Map ssh autocompletion to the sshfsa command.
+complete -F _ssh sshfsa
 ```
 
 Once this is done simply call `sshfsa Host` to mount the session.

@@ -13,9 +13,7 @@
    },
    "scripts": {
       "test": "echo \"***This happens after install\" && echo \"***So does this\"",
-      "build": "node scripts/build.js",
-      "watch": "node scripts/watch.js",
-      "deploy": "node scripts/deploy.js"
+      "postinstall" : "scripts/install.js"
    },
    "bin_desc": "Determines the command that will be globally available : Determines the script that will act as the global app.",
    "bin": {
@@ -38,6 +36,7 @@
    "dependencies": {
       "chalk": "^4.1.0",
       "minimist": "^1.2.0",
-      "q": "^1.5.1"
+      "q": "^1.5.1",
+      "tabtab": "^3.0.2"
    }
 }

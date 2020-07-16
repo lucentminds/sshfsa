@@ -10,20 +10,13 @@
 /** List jshint ignore directives here. **/
 /* jshint undef: true, unused: true */
 /* jslint node: true */
-/* jshint esversion:6 */
 /* eslint-env es6 */
-
-var Q = require( 'q' );
-const fs = require( 'fs' );
-const os = require( 'os' );
 const process_args = require('minimist');
 const chalk = require( 'chalk' );
 
 main( process.argv.slice( 2 ) );
 
 function main( args ){
-   var c_host;
-
    const o_args = process_args( args, {
       alias: {
          l: 'list',
