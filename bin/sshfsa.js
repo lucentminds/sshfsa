@@ -31,8 +31,14 @@ function main( args ){
       .then(function(){
          process.exit(0);
       })
-      .catch(function( err ){
-         console.error( chalk.red( err ) );
+      .catch(function( a_err ){
+         if( !Array.isArray( a_err ) ){
+            a_err = [a_err];
+         }
+
+         a_err.forEach(( err ) => {
+            console.error( chalk.red( err ) );            
+         });
          process.exit(1);
       });
       break;
