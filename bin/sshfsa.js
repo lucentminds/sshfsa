@@ -19,9 +19,11 @@ main( process.argv.slice( 2 ) );
 function main( args ){
    const o_args = process_args( args, {
       alias: {
+         a: 'all',
          l: 'list',
+         h: 'help',
          p: 'path',
-         u: 'unmount'
+         u: 'unmount',
       }
    } );
 
@@ -56,6 +58,17 @@ function main( args ){
       
    case !!o_args.path:
       require( '../lib/cmd-path' )( o_args )
+      .then(function(){
+         process.exit(0);
+      })
+      .catch(function( err ){
+         console.error( err );
+         process.exit(1);
+      });
+      break;
+      
+   case !!o_args.help:
+      require( '../lib/cmd-help' )( o_args )
       .then(function(){
          process.exit(0);
       })
