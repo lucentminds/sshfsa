@@ -13,7 +13,7 @@
    },
    "scripts": {
       "test": "echo \"***This happens after install\" && echo \"***So does this\"",
-      "postinstall" : "scripts/install.js"
+      "postinstall" : "node scripts/postinstall.js"
    },
    "bin_desc": "Determines the command that will be globally available : Determines the script that will act as the global app.",
    "bin": {

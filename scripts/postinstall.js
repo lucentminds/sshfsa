@@ -1,3 +1,4 @@
+#!/bin/node
 const chalk = require( 'chalk' );
 
 console.log( chalk.green( 'Installation success!' ) );
