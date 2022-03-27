@@ -35,7 +35,7 @@
    "devDependencies": {},
    "dependencies": {
       "chalk": "^4.1.0",
-      "minimist": "^1.2.0",
+      "minimist": "^1.2.6",
       "q": "^1.5.1",
       "tabtab": "^3.0.2"
    }
